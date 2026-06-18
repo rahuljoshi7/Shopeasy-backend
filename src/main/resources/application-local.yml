@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:5432/postgres
+    username: postgres.vooqriibfyfokokfitiq
+    password: YOUR_PASSWORD
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://vooqriibfyfokokfitiq.supabase.co/auth/v1
+
+supabase:
+  url: https://vooqriibfyfokokfitiq.supabase.co
+
+cors:
+  allowed-origins: http://localhost:3000

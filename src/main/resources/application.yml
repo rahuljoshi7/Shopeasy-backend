@@ -18,14 +18,16 @@ spring:
       connection-timeout: 20000
       idle-timeout: 300000
 
-  jpa:
-    hibernate:
-      ddl-auto: validate
-    show-sql: false
-    properties:
+  spring:
+    jpa:
       hibernate:
-        default_schema: public
-        format_sql: true
+        ddl-auto: validate
+      show-sql: false
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          default_schema: public
+          format_sql: true
 
   security:
     oauth2:
